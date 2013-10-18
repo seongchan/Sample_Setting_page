@@ -1,4 +1,5 @@
-package com.clipandbooks.test.setting_page;
+package com.clipandbooks.test.setting_pages;
+
 
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
