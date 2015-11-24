@@ -5,3 +5,7 @@ output
 *.dex
 *.ap_
 *.classes
+.classpath
+.project
+.settings/
+gen/

@@ -19,6 +19,7 @@ import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.util.Log;
@@ -52,9 +53,10 @@ public class MainActivity extends Activity {
 		Button btn1 = (Button)findViewById(R.id.action_settings);
 		Button btn2 = (Button)findViewById(R.id.action_airplane_mode);
 		Button btn3 = (Button)findViewById(R.id.action_wireless_settings);
-		Button btn6 = (Button)findViewById(R.id.action_wifi_settings);
-		Button btn4 = (Button)findViewById(R.id.action_nfc_settings);
-		Button btn5 = (Button)findViewById(R.id.action_dummy);
+		Button btn4 = (Button)findViewById(R.id.action_wifi_settings);
+		Button btn5 = (Button)findViewById(R.id.action_nfc_settings);
+		Button btn6 = (Button)findViewById(R.id.action_application_detail);
+		Button btn7 = (Button)findViewById(R.id.action_dummy);
 		
 		// Button Click Listener 등록
 		btn1.setOnClickListener(new onSettingClick());
@@ -63,6 +65,7 @@ public class MainActivity extends Activity {
 		btn4.setOnClickListener(new onSettingClick());
 		btn5.setOnClickListener(new onSettingClick());
 		btn6.setOnClickListener(new onSettingClick());
+		btn7.setOnClickListener(new onSettingClick());
 		
 	}
 
@@ -124,6 +127,16 @@ public class MainActivity extends Activity {
                 } catch (ActivityNotFoundException e) {
                     Log.d(TAG, " activity not found:ACTION_NFC_SETTINGS");
                     Toast.makeText(mContext, getString(R.string.error_activity_nfc), Toast.LENGTH_SHORT).show();
+                }
+				break;
+
+			case R.id.action_application_detail :          // 애플리케이션 세부 설정 
+                try {
+                    intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS, Uri.parse("package:com.clipandbooks.test.setting_pages"));
+				    startActivity(intent);
+                } catch (ActivityNotFoundException e) {
+                    Log.d(TAG, " activity not ACTION_APPLICATION_DETAILS_SETTINGS");
+                    Toast.makeText(mContext, getString(R.string.error_activity_application_detail), Toast.LENGTH_SHORT).show();
                 }
 				break;
 				

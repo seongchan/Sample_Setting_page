@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string name="app_name">설정페이지 이동 테스트</string>
-    <string name="about_copyleft">©2013, seongchan116@gmail.com</string>
+    <string name="about_copyleft">©2013~2015 seongchan116@gmail.com</string>
     <string name="action_settings">ACTION_SETTINGS</string>
     <string name="action_wifi_settings">ACTION_WIFI_SETTINGS</string>
     <string name="action_wireless_settings">ACTION_WIRELESS_SETTINGS</string>
     <string name="action_nfc_settings">ACTION_NFC_SETTINGS</string>
     <string name="action_airplane_settings">ACTION_AIRPLANE_MODE_SETTINGS</string>
+    <string name="action_application_detail">ACTION_APPLICATION_DETAILS_SETTINGS</string>
     <string name="action_dummy">ACTION_DUMMY</string>
     <string name="error_activity_settings">환경설정 페이지 Activity를 찾을 수 없습니다.</string>
     <string name="error_activity_airplane">비행기 모드 설정 Activity가 없습니다.</string>
     <string name="error_activity_wireless">무선인터넷 설정 Activity가 없습니다.</string>
     <string name="error_activity_wifi">Wi-Fi 설정 Activity가 없습니다.</string> 
     <string name="error_activity_nfc">NFC 설정 Activity가 없습니다.(API Level 15이하)</string>
+    <string name="error_activity_application_detail">애플리케이션  상세 설정 Activity 이동을 지원하지 않습니다.</string>
     <string name="error_activity_dummy">더미 Activity가 없습니다. (정상 팝업)</string>
     <string name="description_title">설명</string>
     <string name="description">* ACTION_NFC_SETTINGS는 API Level 16(젤리빈)부터 추가되었기 때문에 하위버전에서는 토스트 팝업이 뜨면 정상.\n* 각 버튼 클릭시 토스트 팝업이 뜨면 해당 Activity가 제공되지 않는 경우입니다.\n\nACTION_SETTINGS : 단말 환경설정 페이지로 이동\nACTION_AIRPLANE_MODE_SETTINGS : 비행기모드를 변경할 수 있는 페이지로 이동\nACTION_WIRELESS_SETTINGS : 무선인터넷 설정을 변경할 수 있는 페이지로 이동\nACTION_WIFI_SETTINGS : Wi-Fi 설정을 변경할 수 있는 페이지로 이동\nACTION_NFC_SETTINSG : NFC 설정을 변경할 수 있는 페이지로 이동\nACTION_DUMMY : 테스트 버튼. 토스트 팝업이 뜨면 정상</string>

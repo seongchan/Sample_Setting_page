@@ -32,31 +32,43 @@
 		        android:id="@+id/action_settings"
 		        android:layout_width="match_parent"
 		        android:layout_height="48dp"
+		        android:textSize="16sp"
 		        android:text="@string/action_settings"/>
 		    <Button 
 		        android:id="@+id/action_airplane_mode"
 		        android:layout_width="match_parent"
 		        android:layout_height="48dp"
+		        android:textSize="16sp"
 		        android:text="@string/action_airplane_settings"/>
 		    <Button 
 		        android:id="@+id/action_wireless_settings"
 		        android:layout_width="match_parent"
 		        android:layout_height="48dp"
+		        android:textSize="16sp"
 		        android:text="@string/action_wireless_settings"/>
 		    <Button 
 		        android:id="@+id/action_wifi_settings"
 		        android:layout_width="match_parent"
 		        android:layout_height="48dp"
+		        android:textSize="16sp"
 		        android:text="@string/action_wifi_settings"/>
 		    <Button 
 		        android:id="@+id/action_nfc_settings"
 		        android:layout_width="match_parent"
 		        android:layout_height="48dp"
+		        android:textSize="16sp"
 		        android:text="@string/action_nfc_settings"/>
+		    <Button 
+		        android:id="@+id/action_application_detail"
+		        android:layout_width="match_parent"
+		        android:layout_height="48dp"
+		        android:textSize="16sp"
+		        android:text="@string/action_application_detail"/>
 		     <Button 
 		        android:id="@+id/action_dummy"
 		        android:layout_width="match_parent"
 		        android:layout_height="48dp"
+		        android:textSize="16sp"
 		        android:text="@string/action_dummy"/>
 		        
 		    <TextView
@@ -86,7 +98,7 @@
                 android:layout_height="1dp"
                 android:background="#000000" />
             
-                        <TextView 
+           <TextView 
                 android:layout_margin="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
